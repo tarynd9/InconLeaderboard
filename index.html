@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Leaderboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="A leaderboard to keep track of lap time's for Veritas.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg" href="images/favicon.svg">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <img src="images/placeholder.png" alt="background">
+    </header>
+    <main>
+      <table>
+        <thead>
+          <tr class="table-header">
+            <th>Name</th>
+            <!-- <th>Phone Number</th> -->
+            <th>Lap Time</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+      <button id="reset-btn">RESET TABLE</button>
+      <button id="add-row-btn">ADD NEW ROW</button>
+      <button id="export-btn">EXPORT</button>
+    </main>
+    <div id="add-row-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <form>
+          <label for="name">Name:</label>
+          <br>
+          <input type="text" id="name-input" placeholder="John Doe">
+          <!-- <br>
+          <label for="phone">Phone Number:</label>
+          <br>
+          <input type="text" id="phone-input" placeholder="1234 567 890"> -->
+          <br>
+          <label for="lap-time" pattern="\d{2}:\d{2}">Lap Time:</label>
+          <br>
+          <input type="time" id="lap-time-input" placeholder="00:00">
+          <br><br>
+          <button type="submit" id="submit-btn">CONFIRM</button>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

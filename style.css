@@ -1,0 +1,283 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* general styles */
+html,body {
+    height: 100%;
+}
+
+body {
+  background-image: url("images/Topograph-01.svg");
+  background-size: cover;
+  background-position: unset;
+  background-repeat: no-repeat;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* header styles */
+header {
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+/* image styling */
+img {
+  width: 25%;
+}
+
+/* header text styling */
+h1 {
+  margin: 0;
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+h2 {
+  text-align: center;
+  padding-bottom: 20px;
+  color: #4ab589;
+}
+
+/* table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: transparent;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+}
+
+table tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 8px !important;
+}
+
+table tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 8px !important;
+}
+
+th, td {
+  padding: 20px;
+  text-align: center;
+}
+
+th {
+  background-color: #4ab589;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+td {
+  color: #272727;
+  font-size: 14px;
+  font-weight: bold;
+  position: relative;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f4f5f8;
+  transition: background-color 0.5s;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #fff;
+  transition: background-color 0.5s;
+}
+
+tbody tr:hover {
+  background-color: #bdbdbd;
+  transition: background-color 0.5s;
+}
+
+
+/* button styling */
+#add-row-btn,
+#reset-btn,
+#export-btn {
+  display: inline-block;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  background: linear-gradient( 90deg,#fff),#f4f5f8; 
+  color: #272727;
+  font-weight: 800;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: transform 0.6s;
+}
+
+#add-row-btn:hover,
+#reset-btn:hover,
+#export-btn:hover {
+  transition: transform 0.6s;
+  transform: scale(1.1);
+}
+
+
+/* modal popup styling */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.678);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 10px;
+  width: 60%;
+}
+
+/* modal popup buttons styling */
+#submit-btn {
+  display: block;
+  margin: 20px auto;
+  background-color: #56d672;
+  color: white;
+  font-weight: 800;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: transform 0.6s;
+}
+
+#cancel-btn {
+  display: block;
+  margin: 20px auto;
+  background-color: #d41d24;
+  color: white;
+  font-weight: 800;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: transform 0.6s;
+}
+
+#submit-btn:hover, #cancel-btn:hover{
+  transition: transform 0.6s;
+  transform: scale(1.1);
+}
+
+/* modal popup close icon styling */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(230, 28, 61);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* form styling for user input */
+form {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+}
+
+label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #272727;
+}
+
+input[type="text"] {
+  width: 75%;
+  font-size: 14px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+input[type="time"] {
+  width: 75%;
+  font-size: 14px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+input[type="text"]::placeholder {
+  text-align: center;
+}
+
+input[type="text"]:focus {
+  outline-color: #2ccfcf;
+}
+
+input[type="time"]:focus {
+  outline-color: #2ccfcf;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+input[type="button"] {
+  background-color: #f44336;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+input[type="button"]:hover {
+  background-color: #d32f2f;
+}
+
