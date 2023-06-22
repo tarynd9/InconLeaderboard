@@ -193,8 +193,8 @@
       <polygon class="cls-29" points="0 0 1946.72 0 1946.72 1095.03 0 1095.03 0 0 0 0"/>
     </clipPath>
     <linearGradient id="linear-gradient" x1="471.72" y1="-310.56" x2="1458.34" y2="1398.33" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#d52f89"/>
-      <stop offset="1" stop-color="#e9531d"/>
+      <stop offset="0" stop-color="#bdd684"/>
+      <stop offset="1" stop-color="#71bf97"/>
     </linearGradient>
     <clipPath id="clippath-3">
       <polygon class="cls-26" points="1.01 1094.02 1946.57 1094.02 1946.57 .04 1.01 .04 1.01 1094.02 1.01 1094.02"/>
