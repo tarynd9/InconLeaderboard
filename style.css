@@ -11,7 +11,7 @@ html,body {
 }
 
 body {
-  background-image: url("images/background-01.svg ");
+  background-image: url("images/background.jpg ");
   background-size: cover;
   background-position: unset;
   background-repeat: no-repeat;
@@ -36,7 +36,7 @@ header {
 /* image styling */
 img {
   padding-top: 30px;
-  width: 10%;
+  width: 30%;
 }
 
 /* header text styling */
@@ -80,7 +80,7 @@ th, td {
 }
 
 th {
-  background-color: #2b4f62;
+  background-color: #6b6b6b;
   color: #ffffff;
   font-weight: bold;
   text-transform: uppercase;
@@ -89,7 +89,7 @@ th {
 }
 
 td {
-  color: #2b4f62;
+  color: #6b6b6b;
   font-size: 14px;
   font-weight: bold;
   position: relative;
@@ -120,7 +120,7 @@ tbody tr:hover {
   margin-left: 20px;
   margin-bottom: 40px;
   margin-top: 40px;
-  background: #2b4f62;; 
+  background: #6b6b6b;; 
   color: #fff;
   font-weight: 800;
   border: none;
@@ -164,7 +164,7 @@ tbody tr:hover {
 #submit-btn {
   display: block;
   margin: 20px auto;
-  background-color: #bdd684;
+  background-color: #5eac47;
   color: white;
   font-weight: 800;
   border: none;
@@ -248,11 +248,11 @@ input[type="text"]::placeholder {
 }
 
 input[type="text"]:focus {
-  outline-color: #2b4f62;
+  outline-color: #d43364;
 }
 
 input[type="time"]:focus {
-  outline-color: #2b4f62;
+  outline-color: #d43364;
 }
 
 input[type="submit"] {
